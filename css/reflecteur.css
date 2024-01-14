@@ -1,0 +1,246 @@
+
+
+:root{
+    --green: rgba(31, 69, 150, 0.2);
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:0 8px 24px rgba(0,32,63, .45),0 8px 8px rgba(0,32,63, .45) ;
+    --text-shadow:.4rem .4rem 0 rgba(73, 73, 73, 0.2);
+    --border:.2rem solid var(--green);
+  }
+.heading{
+text-align: center;
+padding-top: 1rem;
+padding-bottom: 1rem;
+color: /*#0083c3*/#000;
+/*text-shadow: var(--text-shadow);*/
+font-size: 2.5rem;
+letter-spacing: 0.2rem;
+}
+.links{
+display: inline-block;
+padding: 9px;
+margin: 0px 0 0 20px;
+background-color: #f7b72a;
+color: #ffffff;
+font-size: 15px;
+font-weight: bold;
+text-transform: uppercase;
+width: 27%;
+border-radius: 6px;
+text-align: center;
+box-shadow: var(--box-shadow);
+}
+
+.links:hover{
+display: inline-block;
+padding: 13px;
+margin: 0 0 0 20px;
+background-color: #fff;
+color:#f7b72a;
+box-shadow: var(--box-shadow);
+}	
+
+body {
+height:2000px;
+
+}
+/* start upper bar */
+.upper_bar {
+    background-color:#ffffff ;
+    color:#00539a;
+}
+ ul.lang-navbar{ 
+ float:right;
+ list-style:none;
+ margin:0;
+ position:0;
+ }
+     li{
+     display:inline !important ;
+     padding:5px ;
+ }
+                                                     
+.lang-navbar span {
+    color:#00539a;
+}
+
+/* end upper bar */
+
+/* start navbar */
+ 
+ .navbar {
+ position: absolute;
+ height: 48px;
+ width: 810px;
+ top: 60px;
+ left: 311px;
+
+ }
+ .navbar-brand span {
+     color:#00539C;
+     font-size:13px;
+     font-weight:bold;
+ }
+ .nav-link span {
+ color: #00539a;
+ font-size: 14px;
+ font-weight: 500
+ }
+ .nav-link h3 {
+     color: #f7b72a;
+     font-size: 14px;
+     font-weight: 500
+ }
+ .contact{
+     display: block;
+ }
+ button{
+     border: none;
+     border-radius: 0%;
+     background-color: #fff;
+     
+ }
+ .logo{
+
+     position: absolute;
+     height: 54px;
+     width: 249px;
+     bottom: 60px;
+     top: 10px;
+     left: 16px;
+     background-image: url('../img/logo2.png');
+     display: block;
+     float: left;
+     max-width: 100%;
+     background-size: 249px;
+     background-repeat: no-repeat;
+ }	
+ /* juste pour tester */
+ .navbar-toggler{
+    margin-left:100px;
+ }
+ .dropdown-menu {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+ 
+/* end navbar */
+
+/* card réflecteur de la lumiére */
+
+ .card:hover{
+	transform: scale(1.05);
+} 
+.card {
+    transition: transform 0.3s;
+    height: 400px;
+}
+.card .card-img-top{
+	overflow: hidden;
+}
+.card-img-top img{
+	width: 100%;
+    min-height: 100%;
+	object-fit: cover;	
+}
+.card-body{
+    
+	text-align: justify;
+	padding: 3px;
+}
+.card-title{
+	font-size: 20px;
+	font-weight: 500;
+	color:#FFA500;
+}
+.card-text{
+	font-size: 12px;
+}
+/* end card réflecteur de la lumiére */
+/*start footer------------------------------------------------------------------------------------------------*/
+footer{
+	background-color: #00539C;
+	color: #ffffff;
+	padding-top:30px;
+	padding-bottom: 40px;
+	margin-top: 20px;
+	width: 100%;
+	bottom: 0;
+}
+footer a{
+  color:#c2bfbf;
+}
+footer h4{
+	color: #f7b72a;
+}
+.fab{
+	font-size: 30px;
+	margin-top: 20px;
+	margin-left: 5px;
+}
+.social-icons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-top: 2rem;
+}
+.social-icons a{
+  margin-right: 3rem ; 
+}
+.social-icons a:hover{
+  
+  color: #f7b72a;
+}
+
+/*end footer*/
+/* start Pourquoi choisir le Réflecteur de lumière */
+.card1-container {
+          
+    width: 250px;
+    height: 320px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.card1 {
+    width: 97%;
+    height: 352px; 
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.5s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+
+.card1:hover  {
+    transform: rotateY(180deg);
+}
+
+.side{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.side-front {
+    background-image: url('/img/avant.jpg');
+    background-size: cover;
+    z-index: 1;
+    background-size: cover;
+    object-fit: cover;
+   
+
+}
+
+.side-back {
+    background-image: url('/img/apres.jpg');
+    background-size: cover;
+    transform: rotateY(180deg);
+    object-fit: cover;	
+ 
+
+}
+/* end Pourquoi choisir le Réflecteur de lumière */

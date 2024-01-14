@@ -1,0 +1,240 @@
+/* start upper bar */
+.upper_bar {
+    background-color:#ffffff ;
+    color:#00539a;
+}
+ ul.lang-navbar{ 
+ float:right;
+ list-style:none;
+ margin:0;
+ position:0;
+ }
+     li{
+     display:inline !important ;
+     padding:5px ;
+ }
+                                                     
+.lang-navbar span {
+    color:#00539a;
+}
+
+/* end upper bar */
+
+/* start navbar */
+ 
+ .navbar {
+ position: absolute;
+ height: 48px;
+ width: 810px;
+ top: 60px;
+ left: 311px;
+
+ }
+ .navbar-brand span {
+     color:#00539C;
+     font-size:13px;
+     font-weight:bold;
+ }
+ .nav-link span {
+ color: #00539a;
+ font-size: 14px;
+ font-weight: 500
+ }
+ .nav-link h3 {
+     color: #f7b72a;
+     font-size: 14px;
+     font-weight: 500
+ }
+ .contact{
+     display: block;
+ }
+ button{
+     border: none;
+     border-radius: 0%;
+     background-color: #fff;
+     
+ }
+ .logo{
+
+     position: absolute;
+     height: 54px;
+     width: 249px;
+     bottom: 60px;
+     top: 10px;
+     left: 16px;
+     background-image: url('../img/logo2.png');
+     display: block;
+     float: left;
+     max-width: 100%;
+     background-size: 249px;
+     background-repeat: no-repeat;
+ }	
+ 
+ 
+
+ 
+/* end navbar */
+/*start footer------------------------------------------------------------------------------------------------*/
+footer{
+	background-color: #00539C;
+	color: #ffffff;
+	padding-top:30px;
+	padding-bottom: 40px;
+	margin-top: 20px;
+	width: 100%;
+	bottom: 0;
+}
+footer a{
+  color:#c2bfbf;
+}
+footer h4{
+	color: #f7b72a;
+}
+.fab{
+	font-size: 30px;
+	margin-top: 20px;
+	margin-left: 5px;
+}
+.social-icons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-top: 2rem;
+}
+.social-icons a{
+  margin-right: 3rem ; 
+}
+.social-icons a:hover{
+  
+  color: #f7b72a;
+}
+
+/*end footer*/
+/* start first photo photovoltaique */
+/* Container holding the image and the text */
+/* .container-photovol {
+    position: relative;
+	text-align: center;
+	color: white; 
+	
+  }
+  .container-photovol img {
+    filter: brightness(100%);
+	height: 650px;
+}
+  
+.text-block{
+	position: absolute;
+top: 12px;
+left: 16px;
+color: white;
+padding-left: 20px;
+padding-right: 20px;
+} */
+.container-photovol {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 650px; /* Set the container height */
+}
+
+.container-photovol img {
+    filter: brightness(100%);
+    width: 100%;
+    height: 700px;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+.text-block h4{
+	color:transparent;
+	-webkit-text-stroke: 1px ;
+	font-weight: bold;
+	font-size: 190px;
+	background: url(/img/SL-063022-51250-34.jpg);
+	-webkit-background-clip: Text;
+	background-position: 0 0;
+	animation: back 20s linear infinite;
+}
+@keyframes back{
+	100%{
+		background-position: 2000px 0;
+	}
+}
+
+.text-block {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+	max-width: 100%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+   /*  background-color: rgba(0, 0, 0, 0.1); */ /* Add a semi-transparent background */
+   /*  backdrop-filter: blur(10px);  *//* Apply blur effect to the background */
+ /*    border-radius: 10px; */
+    /* max-width: 70%; */ /* Limit the width of the text block */
+   /*  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  *//* Add a subtle shadow */
+}
+/* end  */
+/* start cards  */
+.card{
+     border-color: #ffffff;
+}
+.card-img-top img{
+	width: 100%;
+    min-height: 100%;
+	object-fit: cover;	
+}
+
+.card-avantage{/* avec photo */
+    height: 250px;
+}
+.card-caractéristique{/* sans photo */
+    height: auto;
+}
+.card-body{
+	text-align: justify;
+	padding: 3px;
+}
+.card-title{
+	font-size: 20px;
+	font-weight: 500;
+/* 	color:#FFA500; */ 
+    color: #00539C;
+
+}
+.card-text{
+	font-size: 12px;
+}
+.card-img-top img{
+	width: 100%;
+    min-height: 100%;
+	object-fit: cover;	
+}
+.card .card-img-top{
+	overflow: hidden;
+}
+.card-img-top{
+    height: 120px;
+}
+/* end cards */
+/* start numbered cards */
+.numbered-card {
+  
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .number {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #00539a;
+  }
+  .numbered-card h5 {
+    font-size: 20px;
+	font-weight: 500;
+	color:#FFA500;
+}
+  
+  /*end numbered cards  */
